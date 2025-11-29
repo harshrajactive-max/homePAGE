@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes Layout</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
-    <style>        
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
         * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: "Sour Gummy", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            font-optical-sizing: auto;
+            font-weight: 50px;
+            font-style: normal;
+            text-align: center;
         }
-        
+
         .header {
             background-color: #6b07cf;
-            padding: 20px;
+            padding: 5px;
             text-align: center;
             color: white;
             font-size: 26px;
@@ -32,22 +35,19 @@
             letter-spacing: 1px;
             display: flex;
             align-items: center;
-            justify-content: space-between;   
+            justify-content: space-between;
         }
-        
-        
+
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            padding: 30px;
+            padding: 15px;
             background: linear-gradient(135deg, #e0f7fa, #d1c4e9, #f3e5f5);
-            height: 90vh;
-            font-family: "Poppins";
-
+            height: 85vh;
         }
-        
-        
+
+
         .box {
             display: flex;
             flex-direction: column;
@@ -63,153 +63,158 @@
             height: 300px;
             overflow: hidden;
         }
+
         .box:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 18px rgba(33, 55, 153, 0.5);
             transition: 0.4s ease;
         }
-        
-        
-        .foot{
-          font-size: 20px;
-          /* width: 100vw;
-          height: 20px; */
-          background-color: #6b07cf;
-          /* display: flex;
-          flex-direction: column;
-          justify-content: center; */
-          color: #f4f4f4;
+
+
+        .foot {
+            font-size: 20px;
+            background-color: #6b07cf;
+            color: #f4f4f4;
         }
-        
-        
-        .button{
-            border: 5px solid rgb(255, 249, 249);
+
+
+        .button {
+            border: 6px solid rgb(255, 249, 249);
             border-radius: 50%;
-            width:60px ;
-            height: 60px;
+            width: 65px;
+            height: 65px;
             background-color: rgb(255, 247, 247);
             justify-content: end;
         }
-        button:hover{
-            scale:1.05;
-            /* box-shadow: -8px -8px 60px rgb(209, 201, 199), 8px 8px 60px rgb(1, 188, 186); */
+
+        i:hover {
+            scale: 1.05;
             transition: 0.4s ease;
         }
-            
-        
-        .main{
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
+
+        .fa-circle-user {
+            font-size: 50px;
         }
-        
-        .fa-circle-user{
-           font-size: 50px;
-        }
-        
-        .icon{
-          margin-top: 10px;
-          margin-bottom: 5px;
-        }
-        
-        .feature-title{
-          padding: 0;
-          margin: 0;
-          background-color: #6b07cf;
-          color: #ffffff;
-          height: 75px;
-          text-align: center;
-        }
-        
-        .feature-image{
-          padding: 0;
-          margin: 0;
-          height: 225px;
-          background-color:white;
-        }
-        .food{
+
+        .icon {
             margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .feature-title {
+            padding: 0;
+            margin: 0;
+            background-color: #6b07cf;
+            color: #ffffff;
+            height: 75px;
+            text-align: center;
+        }
+
+        .feature-image {
+            padding: 0;
+            margin: 0;
+            height: 225px;
+            background-color: white;
+        }
+
+        .food {
+            margin-top: 10px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
         }
     </style>
 </head>
+
 <body>
-    <div class="main">
-          <div class="header">
-            <div><h1>CAMPUS CONNECT </h1></div>
-            <div><button class="button"><i class="fa-solid fa-circle-user"></i></button></div>
-          </div>
-                
-          <div class="container">
-            <div class="box">
-              <div class="feature-image">
-                <img src="/Assests/food.jpeg" alt="food outlet" height="210px" width="auto" margin-bottom="20px" class="food">
-              </div> 
-              <div class="feature-title">
-                <i class="fa-solid fa-cutlery icon" ></i><p class="feature-name">FOOD & OUTLET</p>
-              </div>
-              
+
+
+    <div class="header">
+        <div><img src="logo_img.png" height="110px" width="auto"></div>
+        <div><img src="websitename.png" height="90px"></div>
+        <div><button class="button"><i class="fa-solid fa-circle-user"></i></button></div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="feature-image">
+                <img src="food_img.jpeg" alt="food outlet" height="210px" width="auto" margin-bottom="20px"
+                    class="food">
             </div>
-        
-            <div class="box">
-              <div class="feature-image">
-                <img src="/Assests/community.jpeg" alt="commmunity" height="240px" 
-                width="auto">
-              </div>
-              <div class="feature-title">
-                <i class="fa-solid fa-users icon"></i><p class="feature-name">COMMUNITY</p>
-              </div>
-              
+            <div class="feature-title">
+                <i class="fa-solid fa-cutlery icon"></i>
+                <p class="feature-name">FOOD & OUTLET</p>
             </div>
-        
-            <div class="box">
-              <div class="feature-image">
-                <img src="/Assests/notes.jpeg" alt="notes" height="220px" 
-                width="auto">
-              </div>
-              <div class="feature-title">
-                <i class="fa-solid fa-book icon" ></i><p class="feature-name">NOTES</p>
-              </div>
-              
+
+        </div>
+
+        <div class="box">
+            <div class="feature-image">
+                <img src="community_img.jpeg" alt="commmunity" height="240px" width="auto">
             </div>
-        
-            <div class="box">
-              <div class="feature-image">
-                <img src="/Assests/calc.jpeg" alt="calculator" height="220px" 
-                width="auto" >
-              </div>
-              <div class="feature-title">
-                <i class="fa-solid fa-calculator icon" ></i><p class="feature-name">ATTENDANCE CALCULATOR</p>
-              </div>
-              
+            <div class="feature-title">
+                <i class="fa-solid fa-users icon"></i>
+                <p class="feature-name">COMMUNITY</p>
             </div>
-        
-            <div class="box">
-              <div class="feature-image">
-                <img src="/Assests/rental.jpeg" alt="rental" height="220px" 
-                width="auto">
-              </div>
-              <div class="feature-title">
-                <i class="fa-solid fa-repeat icon" ></i><p class="feature-name">RENTAL</p>
-              </div>
-              
+
+        </div>
+
+        <div class="box">
+            <a href="department.html">
+                <div class="feature-image">
+
+                    <img src="notes_img.jpeg" alt="notes" height="220px" width="auto">
+                </div>
+                <div class="feature-title">
+                    <a href="department.html">
+                        <i class="fa-solid fa-book icon"></i>
+                        <p class="feature-name">NOTES</p>
+                    </a>
+                </div>
+
+        </div>
+
+        <div class="box">
+            <div class="feature-image">
+                <img src="calc_img.jpeg" alt="calculator" height="220px" width="auto">
             </div>
-        
-            <div class="box">
-              <div class="feature-image">
-                <img src="/Assests/l&d.jpeg" alt="" height="200px" width="auto" class="food">
-              </div>
-              <div class="feature-title">
-                <i class="fa-solid fa-book icon" ></i><p class="feature-name">LOST & FOUND</p>
-              </div>
-              
+            <div class="feature-title">
+                <i class="fa-solid fa-calculator icon"></i>
+                <p class="feature-name">ATTENDANCE CALCULATOR</p>
             </div>
-          </div>
-        
-          <div class="foot">
-            <p>Developed by a team of :- Aditya Singh | Harsh Raj | Manav Patel | Harshad Bhabhor | Krunal Gamit</p>
-          </div>
+
+        </div>
+
+        <div class="box">
+            <div class="feature-image">
+                <img src="rental_img.jpeg" alt="rental" height="220px" width="auto">
+            </div>
+            <div class="feature-title">
+                <i class="fa-solid fa-repeat icon"></i>
+                <p class="feature-name">RENTAL</p>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="feature-image">
+                <img src="l&d_img.jpeg" alt="" height="200px" width="auto" class="food">
+            </div>
+            <div class="feature-title">
+                <i class="fa-solid fa-box-open"></i>
+                <p class="feature-name">LOST & FOUND</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="foot">
+        <p>Developed by a team of :- Aditya Singh | Harsh Raj | Manav Patel | Harshad Bhabhor | Krunal Gamit</p>
+    </div>
+
     </div>
 </body>
+
 </html>
-
-
